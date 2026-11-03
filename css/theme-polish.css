@@ -1,0 +1,36 @@
+/* Kharis Word visual polish: preserve the classic layout with the ministry palette. */
+:root {
+  --kharis-purple: #4b246d;
+  --kharis-purple-deep: #2c163f;
+  --kharis-gold: #d4a72c;
+  --kharis-cream: #fffaf0;
+}
+
+body { background: #fff; color: #241a2b; }
+a, a:visited { color: var(--kharis-purple); }
+a:hover, a:focus { color: var(--kharis-gold); }
+
+.site-header, .s-header { background-color: var(--kharis-purple-deep); }
+.site-header a, .s-header a, .site-header .header-logo a { color: #fff; }
+.site-header .current a, .site-header a:hover, .s-header a:hover { color: var(--kharis-gold); }
+
+h1, h2, h3, h4, h5, h6 { color: var(--kharis-purple-deep); }
+.page-header, .s-pageheader { background: linear-gradient(135deg, var(--kharis-purple-deep), var(--kharis-purple)); }
+.btn, button, input[type="submit"] { background: var(--kharis-gold); border-color: var(--kharis-gold); color: #241a2b; }
+.btn:hover, button:hover, input[type="submit"]:hover { background: var(--kharis-purple); border-color: var(--kharis-purple); color: #fff; }
+
+.s-about, .s-events, .s-connect { background: var(--kharis-cream); }
+.event-list a, .event-list__item a { border-color: rgba(75, 36, 109, .24); }
+.event-list a:hover, .event-list__item a:hover { background: rgba(212, 167, 44, .12); }
+
+.gallery, .gallery-grid, .photo-gallery { gap: 1.6rem; }
+.gallery img, .gallery-grid img, .photo-gallery img { display: block; width: 100%; border-radius: .4rem; transition: transform .35s ease, filter .35s ease, box-shadow .35s ease; }
+.gallery a:hover img, .gallery-grid a:hover img, .photo-gallery a:hover img { transform: translateY(-.4rem) scale(1.02); filter: saturate(1.08); box-shadow: 0 1rem 2.5rem rgba(44, 22, 63, .22); }
+
+.site-footer, footer { background: var(--kharis-purple-deep); }
+.site-footer a, footer a { color: #fff; }
+.site-footer a:hover, footer a:hover { color: var(--kharis-gold); }
+
+@media screen and (max-width: 600px) {
+  .site-header, .s-header { padding-left: 2rem; padding-right: 2rem; }
+}

@@ -1,5 +1,7 @@
+@import url("theme-polish.css");
+
 /* =================================================================== 
- *  Kharis Word Main Stylesheet
+ *  Hesed Main Stylesheet
  *  Template Ver. 1.0.0
  *  06-26-2019
  *  ------------------------------------------------------------------
@@ -3580,53 +3582,4 @@ html.no-csstransitions .hero-content {
 
 }
 
-/* Kharis Word Ministries visual refresh */
-:root { --kharis-ink:#17152b; --kharis-plum:#3b1d54; --kharis-pink:#ef5b9b; --kharis-gold:#e9bd58; --kharis-lilac:#f5eff9; --kharis-muted:#6f6878; }
-body { background:var(--kharis-lilac); color:var(--kharis-ink); font-family:"Open Sans", sans-serif; }
-h1,h2,h3,h4,h5,h6 { color:var(--kharis-ink); letter-spacing:-.03em; }
-a { color:var(--kharis-plum); }
-a:hover,a:focus { color:var(--kharis-pink); }
-.s-header { background:rgba(23,21,43,.96); height:8.8rem; display:flex; align-items:center; padding:0 5vw; }
-.header-logo { flex:1; }
-.site-logo,.site-footer-logo { display:inline-flex; align-items:center; }
-.site-logo img { width:15rem; height:auto; max-height:6.6rem; object-fit:contain; }
-.header-nav { display:flex; gap:1.8rem; align-items:center; margin:0; }
-.header-nav li { list-style:none; }
-.header-nav li a { color:#fff; font-size:1.3rem; letter-spacing:.14em; text-transform:uppercase; padding:1.1rem 1.4rem; border-radius:999px; }
-.header-nav li.current a,.header-nav li a:hover { background:var(--kharis-pink); color:#fff; }
-.s-hero { min-height:76rem; background:linear-gradient(90deg,rgba(23,21,43,.9),rgba(59,29,84,.42)),url('../images/img (38).jpeg') center/cover; display:flex; align-items:center; }
-.hero-content__text h1 { color:#fff; font-size:clamp(4.5rem,8vw,9rem); line-height:.98; max-width:75rem; }
-.hero-content__text h1::after { content:""; display:block; width:8rem; height:.5rem; background:var(--kharis-gold); margin-top:2.4rem; }
-.btn,.btn.btn--primary { border:0; border-radius:999px; background:var(--kharis-pink); color:#fff; padding-inline:2.8rem; }
-.btn:hover { background:var(--kharis-plum); }
-.s-about,.s-events,.page-content { padding:10rem 5vw; }
-.s-about { background:#fff; }
-.subhead { color:var(--kharis-pink); letter-spacing:.1em; text-transform:uppercase; font-size:1.4rem; }
-.about-content,.events-list,.page-content > .row { max-width:118rem; margin:auto; }
-.about-sched li,.events-list__item,.block-list__item,.church-staff__item { background:#fff; border:1px solid rgba(59,29,84,.12); border-radius:2rem; box-shadow:0 1.5rem 4rem rgba(59,29,84,.08); padding:3.2rem; }
-.about-sched li { border-left:.5rem solid var(--kharis-pink); }
-.page-header { min-height:38rem; padding:16rem 5vw 6rem; background:linear-gradient(90deg,rgba(23,21,43,.86),rgba(59,29,84,.35)),url('../images/img (38).jpeg') center/cover; }
-.page-header h1 { color:#fff; font-size:clamp(4rem,7vw,7rem); }
-.events-list { gap:2rem; }
-.events-list__item { margin-bottom:2rem; }
-.events-list__item-title a { color:var(--kharis-ink); }
-.events-list__item-title a:hover { color:var(--kharis-pink); }
-.events-list__meta { border-top:1px solid #eadff0; padding-top:1.6rem; color:var(--kharis-muted); }
-.events-list__meta li { list-style:none; font-size:1.4rem; }
-.s-social,.s-footer { background:var(--kharis-ink); color:#fff; }
-.s-social a,.s-footer a,.s-footer h4 { color:#fff; }
-.footer-logo img { width:16rem; }
-.gallery-shell { max-width:118rem; margin:0 auto; padding:8rem 5vw; }
-.gallery-intro { max-width:66rem; margin-bottom:4rem; }
-.gallery-grid { columns:3 24rem; column-gap:1.8rem; }
-.gallery-card { break-inside:avoid; position:relative; overflow:hidden; border-radius:1.6rem; margin-bottom:1.8rem; background:var(--kharis-plum); }
-.gallery-card img { display:block; width:100%; transition:transform .5s ease; }
-.gallery-card:hover img { transform:scale(1.06); }
-.gallery-card figcaption { position:absolute; inset:auto 0 0; padding:3.5rem 1.8rem 1.8rem; color:#fff; background:linear-gradient(transparent,rgba(23,21,43,.9)); font-size:1.5rem; }
-.gallery-pagination { display:flex; justify-content:center; gap:.8rem; margin-top:3.5rem; }
-.gallery-pagination button { width:4.2rem; height:4.2rem; padding:0; border-radius:50%; background:#fff; color:var(--kharis-plum); border:1px solid #eadff0; }
-.gallery-pagination button.active,.gallery-pagination button:hover { background:var(--kharis-pink); color:#fff; }
-.contact-card { background:#fff; border-radius:2rem; padding:3.2rem; box-shadow:0 1.5rem 4rem rgba(59,29,84,.08); }
-@media(max-width:700px){ .s-header{padding:0 2rem}.header-nav{gap:0}.header-nav li a{font-size:1rem;padding:.8rem}.s-hero{min-height:64rem}.gallery-grid{columns:1}.s-about,.s-events,.page-content{padding:7rem 2rem}.page-header{padding:13rem 2rem 5rem} }
 /*# sourceMappingURL=main.css.map */
-
