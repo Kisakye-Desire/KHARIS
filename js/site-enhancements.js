@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   if (document.querySelector('.gallery-grid')) {
-    const grid = document.querySelector('.gallery-grid'), items = Array.from(grid.querySelectorAll('figure')), perPage = 9;
+    const grid = document.querySelector('.gallery-grid'), items = Array.from(grid.querySelectorAll('figure')), perPage = 6;
     items.forEach((item, i) => { item.dataset.galleryIndex = i; item.addEventListener('click', () => { const lightbox = document.querySelector('#gallery-lightbox') || document.body.appendChild(Object.assign(document.createElement('div'), { id: 'gallery-lightbox', className: 'gallery-lightbox' })); lightbox.innerHTML = '<button aria-label="Close">×</button><img alt="">'; lightbox.querySelector('img').src = item.querySelector('img').src; lightbox.querySelector('img').alt = item.querySelector('img').alt; lightbox.classList.add('is-open'); lightbox.onclick = e => { if (e.target === lightbox || e.target.tagName === 'BUTTON') lightbox.classList.remove('is-open'); }; }); });
     if (items.length > perPage) { const pager = document.createElement('nav'); pager.className = 'gallery-pagination'; pager.setAttribute('aria-label', 'Gallery pages'); const render = page => { items.forEach((item, i) => item.hidden = Math.floor(i / perPage) !== page); pager.innerHTML = ''; for (let i = 0; i < Math.ceil(items.length / perPage); i++) { const b = document.createElement('button'); b.textContent = i + 1; b.className = i === page ? 'is-active' : ''; b.onclick = () => render(i); pager.appendChild(b); } }; grid.after(pager); render(0); }
   }
